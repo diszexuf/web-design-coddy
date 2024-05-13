@@ -9,61 +9,76 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <title>Title</title>
+    <title>Coddy</title>
 </head>
+
 <body>
 <div class="container">
-    <header class="container-fluid">
-        <div class="row justify-content-between align-items-center">
+    <header>
+        <div class="header-row row">
             <div class="col-auto">
-                <img src="images/logo.svg" alt="Логотип">
+                <img class="logo-image" src="images/logo.svg" alt="Логотип">
             </div>
             <div class="col-auto">
-                <div class="text-end">Образовательная платформа</div>
+                <div class="header-text">Образовательная платформа</div>
             </div>
         </div>
     </header>
 
-    <div class="advertisment border-bottom">
+    <div class="advertisment">
         <div class="advert">
-            <div class="row justify-content-between align-items-center">
+            <div class="row">
                 <div class="col-3">
                     <img class="microphone-advert" src="images/microphone.svg" alt="microphone">
                 </div>
                 <div class="col-6">
-                    <h1 class="text-center advert-text">Начни учиться в Coddy бесплатно!</h1>
-
+                    <h1 class="advert-text-title text-center">Начни учиться в Coddy бесплатно!</h1>
+                    <div class="col-2"></div>
+                </div>
+                <div class="col-3">
+                    <img class="headphone-advert" src="images/headphones.svg" alt="headphones">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
                     <div class="text-center text-advert">
                         Получите бесплатный доступ к любым онлайн-курсам и интенсивам в течение семи дней. Изучите
                         структуру обучения, оцените уровень программы. Это абсолютно бесплатно, даже если вы решите, что
                         курс не соответствует вашим ожиданиям.
                     </div>
+                </div>
+                <div class="col-4"></div>
+
+            </div>
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-2">
                     <div class="btn-place">
                         <a id="btn-advert" class="btn btn-primary"
-                           href="#" role="button">Открыть доступ</a>
+                           href="" role="button">Открыть доступ</a>
                     </div>
                 </div>
-                <div class="col-3">
-                    <img class="microphone-advert" src="images/headphones.svg" alt="headphones">
-                </div>
+                <div class="col-5"></div>
             </div>
         </div>
     </div>
 
     <div class="about-us">
-        <div class="row">
+        <div class="about-us-row row">
             <div class="col-1"></div>
 
-            <div class="col-3">
+            <div class="about-us-title-frame col-3">
                 <h2 class="title-about-us text-left">
                     Coddy - это образовательная платформа
                 </h2>
             </div>
 
-            <div class="col-4">
+            <div class="text-about-us-frame col-4">
                 <div class="text-about-us text-left">
                     У нас представлено более 100 программ обучения, разработанных для того, чтобы помочь вам приобрести
                     актуальные навыки и овладеть востребованными профессиями. Наши образовательные курсы проводятся
@@ -72,10 +87,8 @@
                 </div>
             </div>
 
-            <div class="col-3">
-                <div class="img-about-us">
-                    <img src="images/about_us.svg" alt="img-about-us">
-                </div>
+            <div class="img-about-us-frame col-3">
+                <img class="img-about-us" src="images/about_us.svg" alt="img-about-us">
             </div>
 
             <div class="col-1"></div>
@@ -119,19 +132,153 @@
             </div>
 
             <div class="col-1 border-end border-dark"></div>
+
             <div class="col-1"></div>
+
             <div class="col-3">
                 <div class="row">
-                    <div class="course-card"></div>
+                    <div class="course-card">
+                        <div class="upper-card">
+                            <div class="text-card">Spring</div>
+                            <img class="card-image" src="images/spring.svg">
+                        </div>
+                        <div class="down-card">
+                            <a class="course-card-btn-left btn btn-primary "
+                               href="#" role="button">Записаться</a>
+                            <a class="course-card-btn-right btn btn-primary"
+                               href="#" role="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="upper-card">
+                            <div class="text-card">Vue</div>
+                            <img class="card-image" src="images/vue.svg">
+                        </div>
+                        <div class="down-card">
+                            <a class="course-card-btn-left btn btn-primary "
+                               href="#" role="button">Записаться</a>
+                            <a class="course-card-btn-right btn btn-primary"
+                               href="#" role="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="upper-card">
+                            <div class="text-card">Angular</div>
+                            <img class="card-image" src="images/angular.svg">
+                        </div>
+                        <div class="down-card">
+                            <a class="course-card-btn-left btn btn-primary "
+                               href="#" role="button">Записаться</a>
+                            <a class="course-card-btn-right btn btn-primary"
+                               href="#" role="button">Подробнее</a>
+                        </div>
+                    </div>
+<!--                    <div class="course-card">-->
+<!--                        <div class="upper-card">-->
+<!--                            <div class="text-card">GoLang</div>-->
+<!--                            <img class="card-image" src="images/go.svg">-->
+<!--                        </div>-->
+<!--                        <div class="down-card">-->
+<!--                            <a class="course-card-btn-left btn btn-primary "-->
+<!--                               href="#" role="button">Записаться</a>-->
+<!--                            <a class="course-card-btn-right btn btn-primary"-->
+<!--                               href="#" role="button">Подробнее</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="course-card">-->
+<!--                        <div class="upper-card">-->
+<!--                            <div class="text-card">HTML&CSS</div>-->
+<!--                            <img class="card-image" src="images/html_css.svg">-->
+<!--                        </div>-->
+<!--                        <div class="down-card">-->
+<!--                            <a class="course-card-btn-left btn btn-primary "-->
+<!--                               href="#" role="button">Записаться</a>-->
+<!--                            <a class="course-card-btn-right btn btn-primary"-->
+<!--                               href="#" role="button">Подробнее</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="course-card">
+                        <div class="upper-card">
+                            <div class="text-card">Django</div>
+                            <img class="card-image" src="images/django.svg">
+                        </div>
+                        <div class="down-card">
+                            <a class="course-card-btn-left btn btn-primary "
+                               href="#" role="button">Записаться</a>
+                            <a class="course-card-btn-right btn btn-primary"
+                               href="#" role="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="upper-card">
+                            <div class="text-card">React</div>
+                            <img class="card-image" src="images/react.svg">
+                        </div>
+                        <div class="down-card">
+                            <a class="course-card-btn-left btn btn-primary "
+                               href="#" role="button">Записаться</a>
+                            <a class="course-card-btn-right btn btn-primary"
+                               href="#" role="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="upper-card">
+                            <div class="text-card">NodeJs</div>
+                            <img class="card-image" src="images/nodejs.svg">
+                        </div>
+                        <div class="down-card">
+                            <a class="course-card-btn-left btn btn-primary "
+                               href="#" role="button">Записаться</a>
+                            <a class="course-card-btn-right btn btn-primary"
+                               href="#" role="button">Подробнее</a>
+                        </div>
+                    </div>
+<!--                    <div class="course-card">-->
+<!--                        <div class="upper-card">-->
+<!--                            <div class="text-card">Flask</div>-->
+<!--                            <img class="card-image" src="images/flask.svg">-->
+<!--                        </div>-->
+<!--                        <div class="down-card">-->
+<!--                            <a class="course-card-btn-left btn btn-primary "-->
+<!--                               href="#" role="button">Записаться</a>-->
+<!--                            <a class="course-card-btn-right btn btn-primary"-->
+<!--                               href="#" role="button">Подробнее</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="course-card">-->
+<!--                        <div class="upper-card">-->
+<!--                            <div class="text-card">Microservices</div>-->
+<!--                            <img class="card-image" src="images/microservices.svg">-->
+<!--                        </div>-->
+<!--                        <div class="down-card">-->
+<!--                            <a class="course-card-btn-left btn btn-primary "-->
+<!--                               href="#" role="button">Записаться</a>-->
+<!--                            <a class="course-card-btn-right btn btn-primary"-->
+<!--                               href="#" role="button">Подробнее</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
             </div>
 
-            <div class="col-3">бубубуббу</div>
+
             <div class="col-1"></div>
         </div>
+
+        <div class="btn-more-row row">
+            <div class="col-7"></div>
+
+            <div class="col-2 btn-more-container">
+                <a class="btn-more btn btn-primary"
+                   href="#" role="button">Показать еще</a>
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+
     </div>
 
     <div class="teachers">
@@ -155,18 +302,91 @@
                 </div>
             </div>
             <div class="col-1"></div>
-            <div class="col-3">
+            <div class="teacher-img-frame col-3">
                 <img src="images/teachers_img.svg" alt="image teachers">
             </div>
             <div class="col-1"></div>
         </div>
     </div>
 
-    <div class="cta">
+    <div class="cta-row row">
+        <div class="col-1"></div>
+
+        <div class="cta-left-col col-4">
+            <div class="cta-text-frame">
+                <h1 class="cta-text">Заполните форму, чтобы получить бесплатный доступ</h1>
+            </div>
+            <div class="cta-img-frame">
+                <img class="cta-img" src="images/laptop.svg">
+            </div>
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="cta-right-col col-5">
+            <ul class="cta-points-frame">
+                <li>Выберите направление</li>
+                <li>Заполните форму</li>
+                <li>Ждите письмо с приглашением в систему обучения Coddy</li>
+            </ul>
+
+            <div class="cta-forms-frame">
+                <input class="cta-form form-control" placeholder="Ваше имя">
+                <input class="cta-form form-control" placeholder="Номер телефона">
+                <input class="cta-form form-control" placeholder="Электронная почта">
+            </div>
+            <div class="agree-text">
+                Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с условиями акции.
+            </div>
+            <div class="cta-btn-frame">
+                <a class="cta-btn btn btn-primary">Попробовать бесплатно</a>
+            </div>
+
+        </div>
+
+        <div class="col-1"></div>
 
     </div>
 
-    <footer></footer>
+    <footer class="row">
+        <div class="footer-col col-4">
+            <div class="footer-img-frame">
+                <img src="images/logo_mono.svg">
+            </div>
+
+            <div class="footer-adress-frame">
+                ООО «Coddy»<br>
+                000000, г. Город,<br>
+                пр-т Проспект, дом 123, оф. 123<br>
+                ОГРН 1111111111111
+            </div>
+        </div>
+
+        <div class="footer-col col-4">
+            <div class="footer-phone-number">
+                +7 (999) 888-88-88<br>
+                бесплатно по РФ
+            </div>
+
+            <div class="footer-email-frame">
+                coddy_school@gmail.com<br>
+                Электронная почта
+            </div>
+
+        </div>
+
+        <div class="footer-col col-4">
+            <div class="footer-soc-frame">
+                Мы в социальных сетях
+            </div>
+
+            <div class="footer-soc-icons">
+                <img src="images/youtube.svg">
+                <img src="images/instagram.svg">
+                <img src="images/vk.svg">
+            </div>
+        </div>
+    </footer>
 
 
 </div>
