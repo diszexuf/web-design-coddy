@@ -130,18 +130,18 @@ header {
 /*ABOUT US*/
 
 .about-us {
-    height: auto;
+    height: 325px;
     align-items: center;
     border-bottom: 1px #292929 solid;
 }
 
 .about-us-row {
-    height: auto;
+    height: 100%;
 }
 
 .about-us-title-frame {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -151,17 +151,22 @@ header {
     align-items: center;
 }
 
+.text-about-us {
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .img-about-us-frame {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
 .img-about-us {
     display: inline-block;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 306px;
+    height: 305px;
     @media (max-width: 1280px) {
         height: 290px;
     }
@@ -173,7 +178,13 @@ header {
     }
 }
 
+.title-about-us-wrapper {
+    margin: 0 auto;
+    width: 50%;
+}
+
 .title-about-us {
+    display: inline;
     font-size: 2rem;
     @media (max-width: 768px) {
         font-size: 1.5rem;
